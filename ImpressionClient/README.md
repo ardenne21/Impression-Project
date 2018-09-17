@@ -1,13 +1,16 @@
-# Impressionclient
+# Impression client
 
 The client side of the Impression project is a single page application developed using the Angular 5 framework. 
 
 The webpage consists of four components: 
 
-	- `navigation bar`;
-	- `footer`;
-	- `dashboard` containing the core part of the application;
-	- `import module` listing all the import modules needed for the application, keeping the `app.module` clean as much as possible. 
+`navigation bar`;
+
+`footer`;
+
+`dashboard` containing the core part of the application;
+
+`import module` listing all the import modules needed for the application, keeping the `app.module` clean as much as possible. 
 
 ## Requirement
 
@@ -29,8 +32,9 @@ The structure uses a combination of CSS flex and CSS grid, which shrinks and mov
 
 The dashboard uses two main libraries:
 
-	- `ngx-datatable` (https://github.com/swimlane/ngx-datatable) for the table;
-	- `amCharts` (https://www.amcharts.com/) for graphs and map. 
+`ngx-datatable` (https://github.com/swimlane/ngx-datatable) for the table;
+
+`amCharts` (https://www.amcharts.com/) for graphs and map. 
   
 These libraries have been chosen for the ease of use, while ensuring a wide range of advanced features such as animation capabilities. 
 
