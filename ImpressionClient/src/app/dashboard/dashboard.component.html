@@ -1,0 +1,69 @@
+<div id="dashboard">
+
+	<div id="card-wrapper"> 
+		<!-- Impressions for each device -->
+		<mat-card class="card">
+			<mat-card-header>		    
+			    <mat-card-title>Impressions coming from each device</mat-card-title>
+			</mat-card-header>
+			<mat-card-content style="padding-top: 10px">
+				<ngx-datatable  class='material striped'
+				    #table_device			   
+				    [columnMode]="'force'"
+				    [headerHeight]="50"
+				    [footerHeight]="50"
+				    [rowHeight]="'auto'"
+				    [limit]="10"
+				    [rows]='rows'
+				    [sorts]="[{prop: 'count', dir: 'desc'}]">			    
+				    <ngx-datatable-column name="Device ID" prop="device_id">
+				    </ngx-datatable-column>			   					
+				    <ngx-datatable-column name="Impressions" prop="count">
+				    </ngx-datatable-column>
+				</ngx-datatable>
+		  	</mat-card-content>
+		</mat-card>
+
+		<!-- Impressions for each hour -->
+		<mat-card class="card">
+			<mat-card-header>		    
+			    <mat-card-title>Impressions for each hour of the day</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+			   <div id="chart_hour" class="chart"></div>
+		  	</mat-card-content>
+		</mat-card>
+
+		<!-- Impressions for each day of the week -->
+		<mat-card class="card">
+			<mat-card-header>		    
+			    <mat-card-title>Impressions for each day of the week</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+			    <div id="chart_week" class="chart"></div>
+		  	</mat-card-content>
+		</mat-card>
+
+		<!-- Impressions for each day of the month -->
+		<mat-card class="card">
+			<mat-card-header>		    
+			    <mat-card-title>Impressions for each day of the month</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+			     <div id="chart_month" class="chart"></div>
+		  	</mat-card-content>
+		</mat-card>
+	</div>
+
+	<div id="map-wrapper">
+		<!-- Impressions for each day US state -->
+		<mat-card class="card">
+			<mat-card-header>		    
+			    <mat-card-title>Impressions for each US state</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+			    <div id="chart_map" class="chart"></div>
+		  	</mat-card-content>
+		</mat-card>
+	</div>
+</div>

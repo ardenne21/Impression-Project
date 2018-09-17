@@ -1,0 +1,25 @@
+{
+  "name": "impressionapi",
+  "version": "1.0.0",
+  "description": "Impression Api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "start": "npm run"
+  },
+  "keywords": [
+    "Impression",
+    "Api"
+  ],
+  "author": "Angela Ameruoso",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^1.12.1",
+    "d3-geo": "^1.11.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.2"
+  }
+}
