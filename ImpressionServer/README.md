@@ -1,4 +1,4 @@
-# Impressionclient
+# Impression server
 
 The server side of the Impression project is developed in Node.js with the support of the `express` framework (https://expressjs.com). 
 
