@@ -7,6 +7,7 @@ A detailed development guide is available in each folder of the project.
 
 ## Installation
 In the root of the project, launch: 
+
 	`docker-compose build`
 	
 and then:
